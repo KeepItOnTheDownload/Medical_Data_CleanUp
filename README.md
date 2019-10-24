@@ -25,7 +25,7 @@ Surgeons use medical robotics to performe surguerys. Data is collected via the r
 
 ### Issues I faced: 
 - Ran into issues of unicode when loading in the data due to the Xi numbers, passed in Unicode command. 
-![Medical Data](Resources/PNG/Instrumnet_Used.png)
+![Medical Data](PNG/Instrumnet_Used.png)
 
 ```javascript
 _CP_DF = pd.read_csv(_CP_Path, header=0,encoding = 'unicode_escape')
@@ -114,7 +114,7 @@ White area represents missing data.
 msno.bar(_Combined_DF)
 ```
 
-![Missingo Missing](Resources/PNG/Missingo_Missing_Data.png)
+![Missingo Missing](PNG/Missingo_Missing_Data.png)
 
 
 #### Drop Null values:
@@ -128,4 +128,4 @@ _Combined_DF.dropna(inplace=True)
 ```javascript
 msno.bar(_Combined_DF)
 ```
-![Missingo Clear](Resources/PNG/Missingo_Clean.png)
+![Missingo Clear](PNG/Missingo_Clean.png)
